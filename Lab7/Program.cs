@@ -13,16 +13,19 @@ namespace ConsoleApp10
         {
             Animal animal1 = new Animal(17, "Lucky");
             Cat cat1 = new Cat(10, "Bob", 6);
-           
+
             animal1.Method();
             cat1.Print();
             animal1.Print();
-            Animal petya = new Cat(9, "Tom", 8);
+            Animal lucky = new Cat(9, "Tom", 8);
             
-            petya.Method();// cat method(перед по наследств)
-            petya.Print();
-            Cat cat2 = petya as Cat;// в cat2  лежит Lucky
+            lucky.Method();// cat method(перед по наследств)
+            lucky.Print();
+            Cat cat2 = lucky as Cat;// в cat2  лежит Lucky
             cat2.Print(); 
+           
+         
+           
         }
     }
     public class Animal
